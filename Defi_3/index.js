@@ -1,32 +1,59 @@
-//const XHR = new XMLHttpRequest;
-//  get data from json-server with XMLHttrequest on console
-// var url = 'http://localhost:3000/books';
-// XHR.open('GET', url);
-// XHR.send();
-// XHR.onload = function() {
-//     XHR.response = JSON.parse(XHR.response);
-//     console.log(XHR.response); //3
+//  GET data with XMLHttprequest 
+/*var output1 = document.getElementById('output1'),
+    btn1 = document.getElementById('btn1'),
+    url = 'http://localhost:3000/books',
+    XHR = new XMLHttpRequest;
+btn1.addEventListener('click', getBook)
+
+function getBook() {
+    XHR.open('GET', url);
+    XHR.send();
+    XHR.onload = () => {
+        data = JSON.parse(XHR.response);
+        console.table(data)
+    }
+}*/
+// Post data withXMLHttprequest
+// var output1 = document.getElementById('output1');
+// btn1 = document.getElementById('btn1');
+// var url = 'http://localhost:3000/books',
+//     data = {
+//         "id": 101,
+//         "author": "kaddour",
+//         "contry": "maroc",
+//         "imageLink": "images/things-fall-apart.jpg",
+//         "language": "Arabe",
+//         "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart",
+//         "pages": 100,
+//         "title": "1984",
+//         "year": 1758
+//     },
+//     dataJson = JSON.stringify(data),
+//     request = new XMLHttpRequest;
+// btn1.addEventListener('click', postData);
+
+// function postData() {
+//     request.open('POST', url);
+
+//     request.send(dataJson);
+
+//     request.onload = () => {
+//         request.response = JSON.parse(request.response);
+
+//         output1.textContent = request.response
+//     }
 // }
-const url = 'http://localhost:3000/books';
 
-fetch(url).then(res => {
-        res.json().then(data => {
-            console.log(data);
-        })
-    })
-    // fetch(url, {
-    //     method: 'POST',
-    //     body: JSON.stringify({
-    //         "author": "Achebe",
-    //         "country": "ria",
-    //         "imageLink": "images/things-fall-apart.jpg",
-    //         "language": "English",
-    //         "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
-    //         "pages": 09,
-    //         "title": "Things Fall Apart",
-    //         "year": 1938
-    //     })
 
-// }).then(res => {
-//     return res.json()
-// }).then(data => console.log(data))
+// GET data with fetch
+
+// const url = 'http://localhost:3000/books';
+
+// fetch(url).then(res => {
+//     res.json().then(data => {
+//         console.table(data);
+//     })
+// })
+
+
+// put data with XMLHttprequest //
